@@ -1,4 +1,4 @@
-package com.pengq.response;
+package pengq.common.response;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,8 +17,8 @@ public enum ResponseCode implements Message {
     }
 
     private static final Map<ResponseCode, String> messages = new HashMap<ResponseCode, String>() {{
-        put(SUCCESS, "The operation is finished successfully.");  put(ERROR, "The operation is finished error.");
-
+        put(SUCCESS, "The operation is finished successfully.");
+        put(ERROR, "The operation is finished error.");
     }};
 
     @Override

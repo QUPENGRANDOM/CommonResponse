@@ -1,4 +1,4 @@
-package com.pengq.response;
+package pengq.common.response;
 
 public interface Message {
     String getCode();

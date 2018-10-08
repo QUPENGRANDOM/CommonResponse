@@ -1,6 +1,6 @@
-package com.pengq.response.exception;
+package pengq.common.response.exception;
 
-import com.pengq.response.Message;
+import pengq.common.response.Message;
 
 public abstract class GenericException extends Exception{
     private String responseCode;

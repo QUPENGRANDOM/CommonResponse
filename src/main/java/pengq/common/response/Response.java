@@ -1,5 +1,5 @@
 
-package com.pengq.response;
+package pengq.common.response;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;

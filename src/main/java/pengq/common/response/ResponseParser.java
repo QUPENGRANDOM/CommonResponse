@@ -1,4 +1,4 @@
-package com.pengq.response;
+package pengq.common.response;
 
 public class ResponseParser extends GenericResponse {
     private String code;

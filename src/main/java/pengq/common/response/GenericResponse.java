@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.pengq.response;
+package pengq.common.response;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
-package com.pengq.response;
+package pengq.common.response;
 
-import com.pengq.response.exception.GenericException;
+import pengq.common.response.exception.GenericException;
 
 /**
  * Created by pengq on 2018/9/12 22:05.
