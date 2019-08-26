@@ -16,12 +16,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Optional;
 
-@JsonSerialize(
-        using = Response.Builder.class
-)
-@JsonDeserialize(
-        using = Response.Parser.class
-)
+@JsonSerialize(using = Response.Builder.class)
+@JsonDeserialize(using = Response.Parser.class)
 public interface Response extends Message {
     Optional<Map<String, Object>> getFields();
 
@@ -58,7 +54,7 @@ public interface Response extends Message {
             }
 
             jsonGenerator.writeEndObject();
-            logger.debug("Finished serialize Response", response);
+            logger.debug("Finished serialize Response：{}", response);
         }
     }
 
