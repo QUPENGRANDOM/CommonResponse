@@ -1,25 +1,19 @@
 package pengq.common.response;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by pengq on 2018/9/12 22:04.
  */
 public enum ResponseCode implements Message {
-    SUCCESS("200"),
-    ERROR("500");
+    SUCCESS("200","The operation is finished successfully."),
+    ERROR("500","The operation is finished error.");
 
     private String code;
+    private String message;
 
-    ResponseCode(String code) {
+    ResponseCode(String code, String message) {
         this.code = code;
+        this.message = message;
     }
-
-    private static final Map<ResponseCode, String> messages = new HashMap<ResponseCode, String>() {{
-        put(SUCCESS, "The operation is finished successfully.");
-        put(ERROR, "The operation is finished error.");
-    }};
 
     @Override
     public String getCode() {
@@ -28,6 +22,6 @@ public enum ResponseCode implements Message {
 
     @Override
     public String getMessage() {
-        return messages.get(this);
+        return this.message;
     }
 }
